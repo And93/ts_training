@@ -1,7 +1,7 @@
 import {Events} from "./pages/Events";
 import {Themes} from "./pages/Themes";
 import {News} from "./pages/News";
-import {IEvents, INews, IThemes} from './pages/main';
+import {IEvents, INews, IThemes} from './pages/Main';
 
 const events = new Events("events");
 const themes = new Themes("themes");
