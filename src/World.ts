@@ -1,23 +1,24 @@
-import {Events} from "src/pages/Events";
-import {Themes} from "src/pages/Themes";
-import {News} from "src/pages/News";
+import {Events} from "./pages/Events";
+import {Themes} from "./pages/Themes";
+import {News} from "./pages/News";
+import {IEvents, INews, IThemes} from './pages/main';
+
+const events = new Events("events");
+const themes = new Themes("themes");
+const news = new News("news");
 
 export class World {
     public getPage(name: string) {
-        if (name === "events") {
-            return new Events("events");
-        } else if (name === "themes") {
-            return new Themes("themes");
-        } else if (name === 'news') {
-            return new News("news");
+        if (name === IEvents.name) {
+            return events;
+        } else if (name === IThemes.name) {
+            return themes;
+        } else if (name === INews.name) {
+            return news;
         }
     }
 }
 
 const world = new World();
 
-function get(name: string) {
-    return console.log(world.getPage(name).foo());
-}
-
-get('asd');
+console.log(world.getPage('Themes').foo());

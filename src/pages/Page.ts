@@ -1,3 +1,4 @@
 export class Page {
-    constructor(protected name: string) {};
+    constructor(protected name: string) {
+    };
 }

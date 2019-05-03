@@ -1,7 +1,7 @@
-import {Page} from "src/pages/Page";
+import {Page} from "./Page";
 
 export class Themes extends Page {
-    public foo() {
+    foo() {
         return this.name;
     }
 
