@@ -10,7 +10,7 @@ export interface IEvents extends IPage {
 }
 
 export module IEvents {
-    export const name: 'Events' = 'Events'
+    export const name: string = 'Events'
 }
 
 /**
@@ -21,7 +21,7 @@ export interface IThemes extends IPage {
 }
 
 export module IThemes {
-    export const name: 'Themes' = 'Themes'
+    export const name: string = 'Themes'
 }
 
 /**
@@ -32,6 +32,6 @@ export interface INews extends IPage {
 }
 
 export module INews {
-    export const name: 'News' = 'News'
+    export const name: string = 'News'
 }
 
