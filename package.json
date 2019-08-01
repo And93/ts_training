@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "simple for training",
   "scripts": {
+    "tsc": "tsc",
     "lint": "tslint --project tsconfig.json",
     "project": "ts-node src/World.ts"
   },
